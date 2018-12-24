@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <style>html,
+        body,
+        div {
+            height: 100%; // Passes through the height of the parent iframe element
+        }
+        div {
+            // Magic to prevent iOS growing the iFrame to fit the content.
+            // This container will mimic the behavior of the iframe on a desktop browser
+            -webkit-overflow-scrolling:touch;
+            overflow: hidden;
+            cursor:pointer;
+        }
+        body{
+            margin:0;
+            overflow:hidden;
+        }
+    </style>
+</head>
+<body>
+</body>
+
+<script src="three.75.min.js"></script>
+<script src="OrbitControls.js"></script>
+<script src="script.js"></script>
+
+</html>
